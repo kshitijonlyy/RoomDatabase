@@ -28,7 +28,7 @@ class ListAdapter(var list: List<StudentTable>, var studentList: StudentList) : 
         val name = initView.findViewById<TextView>(R.id.tvName)
         val edit = initView.findViewById<ImageView>(R.id.imgEdit)
         val delete = initView.findViewById<ImageView>(R.id.imgDelete)
-        id.text = list[p0].id.toString()
+        id.text = (p0+1).toString()
         name.text = list[p0].name
 
         edit.setOnClickListener {
